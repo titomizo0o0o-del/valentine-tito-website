@@ -6,11 +6,11 @@ const loveMessages = [
 
 // Google Drive Photo Links
 const photoLinks = [
-    "https://drive.google.com/uc?id=136vBW_gum2zoxDcDDeuN5vhXzIR8YrBL",
-    "https://drive.google.com/uc?id=1MusR-6qnf0t0nas6sRHB2tT3LS0ckCrZ",
-    "https://drive.google.com/uc?id=1uMxNIkCHac-vVv8B0H8gyBHuDT8rHPUK",
-    "https://drive.google.com/uc?id=1BgF7TmR24DMBrtK_5reKhUPP4v60XbCV",
-    "https://drive.google.com/uc?id=1K8P3-TqpF0MC26gvo5zfbLhB5LI73Bpz"
+    "img1.jpg",
+    "img2.jpg",
+    "img3.jpg",
+    "img4.jpg",
+    "img5.jpg"
 ];
 
 // This is a placeholder script
