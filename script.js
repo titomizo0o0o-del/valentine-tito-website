@@ -1,56 +1,37 @@
-// Script for Love Messages, Photo Gallery, and Music Player Controls
-
-// Love Messages Interaction
+// Love Messages Array
 const loveMessages = [
-    "Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.",
-    "In all the world, there is no heart for me like yours.",
-    "Every love story is beautiful, but ours is my favorite."
+    { lang: 'en', message: 'You are my world!' },
+    { lang: 'ar', message: 'أنت عالمي!' },
+    { lang: 'en', message: 'Love is friendship set on fire.' },
+    { lang: 'ar', message: 'الحب هو الصداقة التي أُشعلت بالنار.' },
+    { lang: 'en', message: 'Every love story is beautiful, but ours is my favorite.' },
+    { lang: 'ar', message: 'كل قصة حب جميلة، لكن قصتنا هي المفضلة لدي.' }
 ];
 
-function displayLoveMessage() {
-    const messageContainer = document.getElementById('love-message');
-    messageContainer.innerText = loveMessages[Math.floor(Math.random() * loveMessages.length)];
-}
+// Photo URLs from Google Drive
+const photoUrls = [
+    'https://drive.google.com/uc?id=photo1_id',
+    'https://drive.google.com/uc?id=photo2_id',
+    'https://drive.google.com/uc?id=photo3_id',
+    'https://drive.google.com/uc?id=photo4_id',
+    'https://drive.google.com/uc?id=photo5_id'
+];
 
-// Photo Gallery Navigation
-let currentImageIndex = 0;
-const images = document.querySelectorAll('.gallery img');
-
-function showImage(index) {
-    images.forEach((img, i) => {
-        img.style.display = (i === index) ? 'block' : 'none';
+// Function to display messages
+function displayMessages() {
+    loveMessages.forEach(msg => {
+        console.log(`[${msg.lang}] ${msg.message}`);
     });
 }
 
-function nextImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    showImage(currentImageIndex);
+// Function to navigate gallery
+function navigateGallery(direction) {
+    // Implement navigation logic here
+    console.log(`Navigating ${direction}`);
 }
 
-function previousImage() {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    showImage(currentImageIndex);
+// Function to control music player
+function controlMusicPlayer(action) {
+    // Implement music control logic here
+    console.log(`Music player action: ${action}`);
 }
-
-// Music Player Controls
-const audio = document.getElementById('audio-player');
-
-function playMusic() {
-    audio.play();
-}
-
-function pauseMusic() {
-    audio.pause();
-}
-
-// Load initial message and first image
-window.onload = () => {
-    displayLoveMessage();
-    showImage(currentImageIndex);
-};
-
-// Event Listeners
-document.getElementById('next-btn').addEventListener('click', nextImage);
-document.getElementById('prev-btn').addEventListener('click', previousImage);
-document.getElementById('play-btn').addEventListener('click', playMusic);
-document.getElementById('pause-btn').addEventListener('click', pauseMusic);
