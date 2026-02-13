@@ -1,37 +1,18 @@
-// Love Messages Array
+// Personal Love Messages
 const loveMessages = [
-    { lang: 'en', message: 'You are my world!' },
-    { lang: 'ar', message: 'أنت عالمي!' },
-    { lang: 'en', message: 'Love is friendship set on fire.' },
-    { lang: 'ar', message: 'الحب هو الصداقة التي أُشعلت بالنار.' },
-    { lang: 'en', message: 'Every love story is beautiful, but ours is my favorite.' },
-    { lang: 'ar', message: 'كل قصة حب جميلة، لكن قصتنا هي المفضلة لدي.' }
+    "حبيبتقلب طارق من جوااا🥹\nبحبك اوي يعيوني ربنا يخليكي ليا وارجع حبيبك تاني وارجع وطروقك وتوتي تاني🥹\nان مش نفضل طول العمر سوا يعيونيي انتتت واشوفك كويسه وفاحسن حته في الدنيا كدههههووو وأفضل فخور بيكي موتتتت طول الوقتتتتت\nبحبك اوي والله 🥹🥹🥹🥹🥹🥹",
+    "U mean more to me than I ever know how to explain. U're my comfort, my favorite smile, and the one my heart always chooses, I don't need special days to love you. You're always my choice, today and every day."
 ];
 
-// Photo URLs from Google Drive
-const photoUrls = [
-    'https://drive.google.com/uc?id=photo1_id',
-    'https://drive.google.com/uc?id=photo2_id',
-    'https://drive.google.com/uc?id=photo3_id',
-    'https://drive.google.com/uc?id=photo4_id',
-    'https://drive.google.com/uc?id=photo5_id'
+// Google Drive Photo Links
+const photoLinks = [
+    "https://drive.google.com/uc?id=136vBW_gum2zoxDcDDeuN5vhXzIR8YrBL",
+    "https://drive.google.com/uc?id=1MusR-6qnf0t0nas6sRHB2tT3LS0ckCrZ",
+    "https://drive.google.com/uc?id=1uMxNIkCHac-vVv8B0H8gyBHuDT8rHPUK",
+    "https://drive.google.com/uc?id=1BgF7TmR24DMBrtK_5reKhUPP4v60XbCV",
+    "https://drive.google.com/uc?id=1K8P3-TqpF0MC26gvo5zfbLhB5LI73Bpz"
 ];
 
-// Function to display messages
-function displayMessages() {
-    loveMessages.forEach(msg => {
-        console.log(`[${msg.lang}] ${msg.message}`);
-    });
-}
-
-// Function to navigate gallery
-function navigateGallery(direction) {
-    // Implement navigation logic here
-    console.log(`Navigating ${direction}`);
-}
-
-// Function to control music player
-function controlMusicPlayer(action) {
-    // Implement music control logic here
-    console.log(`Music player action: ${action}`);
-}
+// This is a placeholder script
+console.log(loveMessages);
+console.log(photoLinks);
