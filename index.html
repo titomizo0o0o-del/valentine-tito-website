@@ -4,35 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day Celebration</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-background">
+        <span class="heart">❤️</span>
+        <span class="heart">💕</span>
+        <span class="heart">❤️</span>
+        <span class="heart">💕</span>
+        <span class="heart">❤️</span>
+    </div>
+
     <header>
-        <h1>Happy Valentine's Day!</h1>
+        <h1 class="love-title">💕 بحبك يا ساسورتي 💕</h1>
         <p>Celebrate love and memories with us.</p>
     </header>
-    <section id="love-messages">
-        <h2>Love Messages</h2>
-        <p>Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day.</p>
+
+    <!-- Love Messages Section -->
+    <section id="love-messages" class="card">
+        <h2>💌 Love Messages 💌</h2>
+        <div id="love-message" class="love-message-box">
+            <!-- Messages will be displayed here -->
+        </div>
+        <button id="next-message-btn" class="btn btn-primary">Next Message ❤️</button>
     </section>
-    <section id="photo-gallery">
-        <h2>Memories Gallery</h2>
+
+    <!-- Photo Gallery Section -->
+    <section id="photo-gallery" class="card">
+        <h2>📸 Memories Gallery 📸</h2>
         <div class="gallery">
-            <img src="photo1.jpg" alt="Memory 1">
-            <img src="photo2.jpg" alt="Memory 2">
-            <img src="photo3.jpg" alt="Memory 3">
+            <img id="gallery-image" src="" alt="Memory">
+        </div>
+        <div class="gallery-controls">
+            <button id="prev-btn" class="btn btn-secondary">⬅️ Previous</button>
+            <span id="image-counter" class="image-counter"></span>
+            <button id="next-btn" class="btn btn-secondary">Next ➡️</button>
         </div>
     </section>
-    <section id="music-player">
-        <h2>Music Player</h2>
-        <audio controls>
-            <source src="music.mp3" type="audio/mpeg">
+
+    <!-- Music Player Section -->
+    <section id="music-player" class="card">
+        <h2>🎵 Our Song 🎵</h2>
+        <audio id="audio-player" controls style="width: 100%; margin: 20px 0;">
+            <source src="https://drive.usercontent.com/download?id=1MusR-6qnf0t0nas6sRHB2tT3LS0ckCrZ&export=download" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
+        <div class="music-controls">
+            <button id="play-btn" class="btn btn-primary">▶️ Play</button>
+            <button id="pause-btn" class="btn btn-primary">⏸️ Pause</button>
+        </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <button class="animate-button">Send Love</button>
+        <p>💕 Made with love for you 💕</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
