@@ -4,7 +4,6 @@ const loveMessages = [
     "U mean more to me than I ever know how to explain. U're my comfort, my favorite smile, and the one my heart always chooses, I don't need special days to love you. You're always my choice, today and every day."
 ];
 
-// Google Drive Photo Links
 const photoLinks = [
     "img1.jpg",
     "img2.jpg",
