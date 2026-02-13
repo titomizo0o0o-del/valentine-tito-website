@@ -1,0 +1,73 @@
+/* 
+ * style.css 
+ * Romantic Styling, Animations, and Responsive Design for Valentine's Website 
+ */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8d0d0; /* Soft pink background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff3d3d; /* Bright red header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeIn 2s;
+}
+
+/* Keyframe for fadeIn animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff3d3d;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+}
